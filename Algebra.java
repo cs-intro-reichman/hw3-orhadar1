@@ -12,13 +12,13 @@ public class Algebra {
  		//System.out.println(times(10,2));  // 3 * 4
    		//System.out.println(plus(2,times(4,2)));  // 2 + 4 * 2
    		//System.out.println(pow(1,2));      // 5^3
-   		//System.out.println(pow(3,2));      // 3^5
+   		//System.out.println(pow(3,0));      // 3^5
    		//System.out.println(div(12,3));   // 12 / 3    
    		//System.out.println(div(10,2));    // 5 / 5  
    		//System.out.println(div(21,-7));   // 25 / 7
    		//System.out.println(mod(25,7));   // 25 % 7
    		//System.out.println(mod(7,5));  // 120 % 6    
-   		//System.out.println(sqrt(4));
+   		System.out.println(sqrt(4));
 		//System.out.println(sqrt(263169));
    		//System.out.println(sqrt(76123));
 	}  
@@ -99,8 +99,10 @@ public class Algebra {
 	// Returns x^n (for n >= 0)
 	public static int pow(int x, int n) {
 		int tempx = x;
-		
-		while(n != 1){
+		if(n == 0){
+			x = 1;
+		}
+		while(n != 1 && n != 0){
 			x = times(tempx,x);
 			n--;
 		}
@@ -153,6 +155,9 @@ public class Algebra {
 	// Returns the integer part of sqrt(x) 
 	public static int sqrt(int x) {
 	int i = 1;
+	if(x == 0){
+		i = 0;
+	}
 	while (times(i, i) != x) {
 		i++;
 	}
