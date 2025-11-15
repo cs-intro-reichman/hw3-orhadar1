@@ -6,21 +6,21 @@
 public class Algebra {
 	public static void main(String args[]) {
 	    // Tests some of the operations
-	    //System.out.println(plus(2,-3));   // 2 + 3
-	    //System.out.println(minus(-7,2));  // 7 - 2
-   		//System.out.println(minus(2,7));  // 2 - 7
- 		//System.out.println(times(10,2));  // 3 * 4
-   		//System.out.println(plus(2,times(4,2)));  // 2 + 4 * 2
-   		//System.out.println(pow(1,2));      // 5^3
-   		//System.out.println(pow(3,0));      // 3^5
-   		//System.out.println(div(12,3));   // 12 / 3    
-   		//System.out.println(div(10,2));    // 5 / 5  
-   		//System.out.println(div(21,-7));   // 25 / 7
-   		//System.out.println(mod(25,7));   // 25 % 7
-   		//System.out.println(mod(7,5));  // 120 % 6    
-   		System.out.println(sqrt(4));
-		//System.out.println(sqrt(263169));
-   		//System.out.println(sqrt(76123));
+	    System.out.println(plus(2,3));   // 2 + 3
+	    System.out.println(minus(7,2));  // 7 - 2
+   		System.out.println(minus(2,7));  // 2 - 7
+ 		System.out.println(times(3,4));  // 3 * 4
+   		System.out.println(plus(2,times(4,2)));  // 2 + 4 * 2
+   		System.out.println(pow(5,3));      // 5^3
+   		System.out.println(pow(3,5));      // 3^5
+   		System.out.println(div(12,3));   // 12 / 3    
+   		System.out.println(div(5,5));    // 5 / 5  
+   		System.out.println(div(25,7));   // 25 / 7
+   		System.out.println(mod(25,7));   // 25 % 7
+   		System.out.println(mod(120,6));  // 120 % 6    
+   		System.out.println(sqrt(36));
+		System.out.println(sqrt(263169));
+   		System.out.println(sqrt(76123));
 	}  
 
 	// Returns x1 + x2
